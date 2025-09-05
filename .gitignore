@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+asap-estate-web/
+asap-estate-web/
+asap-estate-web
