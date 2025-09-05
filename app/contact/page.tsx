@@ -15,7 +15,6 @@ export default function ContactPage() {
         พร้อมผู้เชี่ยวชาญเคส <strong>NPL–NPA</strong> และให้คำปรึกษาเรื่องสินเชื่อ <strong>ฟรี</strong>
         ดูแลครบทุกขั้นตอน ตั้งแต่รับฝาก–ทำการตลาด–พาชมทรัพย์–เจรจาต่อรอง–เอกสาร–จนจบวันโอนกรรมสิทธิ์
       </p>
-
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         <div className="rounded-2xl border p-6">
           <h2 className="text-lg font-semibold">บริการของเรา</h2>
@@ -27,7 +26,6 @@ export default function ContactPage() {
             <li>อำนวยความสะดวกจนจบวันโอนกรรมสิทธิ์</li>
           </ul>
         </div>
-
         <div className="rounded-2xl border p-6">
           <h2 className="text-lg font-semibold">วัฒนธรรมการทำงาน</h2>
           <ul className="mt-3 list-disc space-y-1 pl-6 text-gray-700">
@@ -38,7 +36,6 @@ export default function ContactPage() {
           </ul>
         </div>
       </div>
-
       <div className="mt-8 rounded-2xl border bg-gray-50 p-6">
         <h2 className="text-lg font-semibold">กระบวนการทำงานของเรา</h2>
         <ol className="mt-3 list-decimal space-y-1 pl-6 text-gray-700">
