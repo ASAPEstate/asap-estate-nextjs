@@ -1,20 +1,21 @@
+// app/about/page.tsx
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About | ASAP Estate",
   description:
-    "ที่ปรึกษาและนายหน้าฯ โดย ASAP Estate – ซื่อสัตย์ โปร่งใส ทํางานไว และสื่อสารชัดเจน",
+    "ที่ปรึกษาและนายหน้าฯ โดย ASAP Estate ซื่อสัตย์ โปร่งใส ทํางานไว และสื่อสารชัดเจน",
 };
 
 export default function AboutPage() {
   return (
     <section className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-bold">เกี่ยวกับ ASAP Estate</h1>
-      <p className="mt-3 text-gray-700 leading-relaxed">
+      <p className="mt-3 text-gray-700">
         เราคือทีม <strong>นายหน้าและที่ปรึกษาอสังหาริมทรัพย์</strong>{" "}
         ให้บริการรับขายฝาก ฝากขาย–เช่า บ้าน คอนโด ที่ดิน และอสังหาริมทรัพย์เชิงพาณิชย์
-        เชี่ยวชาญเคส <strong>NPL–NPA</strong> ประเมินกลยุทธ์ จัดโครงสร้างดีล
-        และให้คำปรึกษาเรื่องสินเชื่อ <strong>ฟรี</strong> ดูแลครบทุกขั้นตอน
+        เชี่ยวชาญเคส <strong>NPL–NPA</strong> ประเมินและเทียบราคาตลาด
+        ให้คำปรึกษาเรื่องสินเชื่อ <strong>ฟรี</strong> ดูแลครบทุกขั้นตอน
         ตั้งแต่รับฝาก–ทำการตลาด–พาชมทรัพย์–เจรจาต่อรอง–เอกสาร–จนจบวันโอนกรรมสิทธิ์
       </p>
 
