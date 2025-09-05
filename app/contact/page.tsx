@@ -1,6 +1,11 @@
 // app/contact/page.tsx
+import type { Metadata } from "next";
 
-export default function AboutPage() {
+export const metadata: Metadata = {
+  title: "Contact | ASAP Estate",
+  description: "ติดต่อเรา",
+};
+export default function ContactPage() {
   return (
     <section className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-bold">เกี่ยวกับ ASAP Estate</h1>
