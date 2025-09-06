@@ -1,55 +1,43 @@
-// app/contact/page.tsx
 import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact | ASAP Estate",
-  description: "ติดต่อเรา",
+  description: "ติดต่อที่ปรึกษาอสังหาริมทรัพย์ ASAP Estate — ปรึกษาฟรี",
 };
+
 export default function ContactPage() {
   return (
     <section className="mx-auto max-w-4xl px-4 py-12">
-      <h1 className="text-3xl font-bold">เกี่ยวกับ ASAP Estate</h1>
-      <p className="mt-3 text-gray-700 leading-relaxed">
-        เราคือทีม <strong>นายหน้าและที่ปรึกษาอสังหาริมทรัพย์</strong>
-        ให้บริการรับขายฝาก ฝากขาย–เช่า บ้าน คอนโด ที่ดิน และอสังหาริมทรัพย์เชิงพาณิชย์
-        พร้อมผู้เชี่ยวชาญเคส <strong>NPL–NPA</strong> และให้คำปรึกษาเรื่องสินเชื่อ <strong>ฟรี</strong>
-        ดูแลครบทุกขั้นตอน ตั้งแต่รับฝาก–ทำการตลาด–พาชมทรัพย์–เจรจาต่อรอง–เอกสาร–จนจบวันโอนกรรมสิทธิ์
+      <h1 className="text-3xl font-bold">ติดต่อเรา</h1>
+      <p className="mt-2 text-gray-700">
+        ปรึกษาเรื่องการฝากขาย–ปล่อยเช่า ประเมินราคา เคส NPL–NPA หรือขอคำแนะนำสินเชื่อ
+        เราพร้อมช่วยคุณแบบครบวงจรจนจบวันโอนกรรมสิทธิ์
       </p>
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl border p-6">
-          <h2 className="text-lg font-semibold">บริการของเรา</h2>
-          <ul className="mt-3 list-disc space-y-1 pl-6 text-gray-700">
-            <li>รับฝากขาย/ปล่อยเช่า บ้าน คอนโด ที่ดิน อสังหาฯ เชิงพาณิชย์</li>
-            <li>ที่ปรึกษาเคส NPL–NPA และทรัพย์ปัญหา</li>
-            <li>การตลาดครบวงจร: ถ่ายภาพ/วิดีโอ โฆษณาออนไลน์ คัดกรองลูกค้า</li>
-            <li>ที่ปรึกษาสินเชื่อ: จัดหาแหล่งเงินกู้ จัดเตรียมเอกสาร</li>
-            <li>อำนวยความสะดวกจนจบวันโอนกรรมสิทธิ์</li>
-          </ul>
+
+      <div className="mt-6 grid gap-8 md:grid-cols-2">
+        <div className="space-y-3 text-gray-800">
+          <p><span className="font-medium">โทร:</span>{" "}
+            <a href="tel:+6620000000" className="underline underline-offset-2">02-xxx-xxxx</a>
+          </p>
+          <p><span className="font-medium">อีเมล:</span>{" "}
+            <a href="mailto:hello@asapestate.co.th" className="underline underline-offset-2">hello@asapestate.co.th</a>
+          </p>
+          <p><span className="font-medium">LINE Official:</span>{" "}
+            <a className="text-emerald-700 underline underline-offset-2"
+               href="https://line.me/R/ti/p/@your-line-id" target="_blank" rel="noopener noreferrer">
+              @asapestate
+            </a>
+          </p>
+          <p><span className="font-medium">ที่อยู่:</span> (ใส่ที่อยู่บริษัท)</p>
+
+          <div className="rounded-2xl border bg-gray-50 p-4 text-sm">
+            <p className="font-semibold">ฝากขาย/ปล่อยเช่า ด่วน</p>
+            <p className="text-gray-600">ส่งรายละเอียดทรัพย์ + รูปภาพ ให้เราประเมินและวางแผนการตลาดให้ทันที</p>
+          </div>
         </div>
-        <div className="rounded-2xl border p-6">
-          <h2 className="text-lg font-semibold">วัฒนธรรมการทำงาน</h2>
-          <ul className="mt-3 list-disc space-y-1 pl-6 text-gray-700">
-            <li>ทำทันที — ตอบไว ลงมือไว เน้นผลลัพธ์</li>
-            <li>ซื่อสัตย์ โปร่งใส มีวินัย และยึดจรรยาบรรณวิชาชีพ</li>
-            <li>ใช้สมองและหัวใจควบคู่กัน — คิดวิเคราะห์และใส่ใจลูกค้า</li>
-            <li>เรียนรู้อย่างต่อเนื่อง พัฒนาความรู้และเครื่องมือใหม่ ๆ</li>
-          </ul>
-        </div>
-      </div>
-      <div className="mt-8 rounded-2xl border bg-gray-50 p-6">
-        <h2 className="text-lg font-semibold">กระบวนการทำงานของเรา</h2>
-        <ol className="mt-3 list-decimal space-y-1 pl-6 text-gray-700">
-          <li>รับฟังโจทย์และสำรวจทรัพย์/เอกสาร</li>
-          <li>วิเคราะห์ราคาและวางแผนกลยุทธ์การขาย–เช่า</li>
-          <li>ทำการตลาด เข้าถึงกลุ่มเป้าหมาย และพาชมทรัพย์</li>
-          <li>เจรจาต่อรอง จัดการเอกสาร สินเชื่อ และนัดโอนกรรมสิทธิ์</li>
-        </ol>
-        <a
-          href="/contact"
-          className="mt-4 inline-block rounded-xl bg-black px-5 py-3 text-white"
-        >
-          เริ่มคุยกับที่ปรึกษา
-        </a>
+
+        <ContactForm />
       </div>
     </section>
   );
