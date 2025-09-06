@@ -1,28 +1,41 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"                 # โฟลเดอร์โปรเจกต์
+    directory: "/"               # โฟลเดอร์โปรเจกต์
     schedule:
-      interval: "daily"            # ตรวจอัปเดตรายวัน
+      interval: "daily"          # ตรวจอัปเดตทุกวัน
       time: "02:00"
       timezone: "Asia/Bangkok"
     open-pull-requests-limit: 10
     target-branch: "main"
+
     allow:
       - dependency-type: "direct"  # อัปเดต deps หลัก
-      - dependency-type: "all"
+      - dependency-type: "all"     # รวมทั้ง devDeps
+
     groups:
       nextjs:
         patterns:
           - "next"
           - "eslint-config-next"
+
       react:
         patterns:
           - "react"
           - "react-dom"
+
       typescript-eslint:
         patterns:
           - "@typescript-eslint/*"
+
     ignore:
-      - dependency-name: "typescript"   # เราตรึง 5.4.x
+      # ตรึง TypeScript ไว้ที่ 5.4.x (ไม่เกิน 5.5)
+      - dependency-name: "typescript"
         versions: [">=5.5.0"]
+
+      # ไม่ให้อัป major version ของ React & React-DOM อัตโนมัติ
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
