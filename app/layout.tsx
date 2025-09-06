@@ -10,9 +10,9 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "ASAP Estate",
+  title: "TEST_ASAP Estate",
   description:
-    "ที่ปรึกษาอสังหาริมทรัพย์ครบวงจร — ฝากขาย ปล่อยเช่า ประเมินราคา และจัดการสินเชื่อ",
+    "ที่ปรึกษาและดูแลบริการงานอสังหาริมทรัพย์ครบวงจร ขาย-เช่า บ้าน คอนโด ที่ดิน อสังหาฯเชิงพาณิชย์  NPL และบริการสินเชื่อฟรี"
 };
 
 export default function RootLayout({
@@ -54,30 +54,39 @@ export default function RootLayout({
               <div>
                 <p className="font-semibold">ASAP Estate</p>
                 <p className="mt-2 text-sm text-gray-600">
-                  ที่ปรึกษาอสังหาริมทรัพย์ครบวงจร ฝากขาย–ปล่อยเช่า ประเมินราคา จัดไฟแนนซ์
+                  ที่ปรึกษาอสังหาริมทรัพย์ครบวงจร ขาย-เช่า บ้าน คอนโด ที่ดิน อสังหาฯเชิงพาณิชย์ NPL และบริการสินเชื่อฟรี
+
                 </p>
               </div>
               <div className="text-sm">
                 <p className="font-semibold">ติดต่อ</p>
                 <ul className="mt-2 space-y-1 text-gray-700">
-                  <li>โทร: <a href="tel:+6620000000" className="underline">02-xxx-xxxx</a></li>
-                  <li>อีเมล: <a href="mailto:hello@asapestate.co.th" className="underline">hello@asapestate.co.th</a></li>
-                  <li>LINE Official: @asapestate</li>
+                  <li>โทร: <a href="tel:+6620000000" className="underline">082-444xxxx</a></li>
+
+                  <li>อีเมล: <a href="mailto:hello@asapestate.co.th" className="underline">admin@asapestate.co.th</a></li>
+
+                  <li>LINE Official: @asap_estate</li>
                 </ul>
               </div>
               <div className="text-sm">
+
                 <p className="font-semibold">ลิงก์</p>
+
                 <ul className="mt-2 space-y-1 text-gray-700">
+
                   <li><Link href="/about" className="underline">เกี่ยวกับเรา</Link></li>
+
                   <li><Link href="/contact" className="underline">ติดต่อเรา</Link></li>
+
                   <li><Link href="/" className="underline">นโยบายความเป็นส่วนตัว</Link></li>
+
                 </ul>
               </div>
             </div>
             <div className="border-t py-5">
               <div className="mx-auto flex max-w-6xl items-center justify-between px-4 text-xs text-gray-500">
-                <p>© {new Date().getFullYear()} ASAP Estate Co., Ltd. สงวนลิขสิทธิ์</p>
-                <p className="hidden sm:block">Built with Next.js</p>
+                <p>© {new Date().getFullYear()} ASAP Estate Co., Ltd. Test</p>
+                <p className="hidden sm:block">Built with ❤️ by ASAP Estate</p>
               </div>
             </div>
           </footer>
